@@ -1,0 +1,25 @@
+Package: IAplots
+Title: functions for use in the Israeli Antitrust Authority
+Version: 0.0.0.9001
+Authors@R: 
+    person(given = "Eviatar",
+           family = "Guttman",
+           role = c("aut", "cre"),
+           email = "eviatargu@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends:
+    extrafont,
+    ggplot2
+Imports: 
+    magrittr,
+    dplyr,
+    knitr,
+    kableExtra,
+    reactable,
+    stringr

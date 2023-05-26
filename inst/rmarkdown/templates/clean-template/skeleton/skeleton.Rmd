@@ -1,0 +1,75 @@
+---
+title: "Title"
+subtitle: "Sub-Title"
+author: "my name"
+date: "Last updated: `r format(Sys.time(), '%d-%m-%Y')`"  
+output: 
+  html_document: 
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    toc_collapsed: yes
+    number_sections: yes
+    smooth_scroll: yes
+    code_folding: hide
+    fig_caption: yes
+    highlight: espresso
+    theme: flatly
+    css: "style.css"
+urlcolor: blue
+editor_options: 
+  chunk_output_type: console
+---  
+# Setup {-}
+```{r setup, include = TRUE}
+# global chunk options
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE,
+                      tidy = FALSE,
+                      fig.width = 10,
+                      fig.height = 7,
+                      fig.path='Figures_RMD/',
+                      fig.align = 'center')
+
+# don't show NA's in tables
+options(knitr.kable.NA = '')
+
+```
+
+
+```{r loading packages etc.}
+# load packages
+library(IAplots)
+theme_set(IA_theme())
+options(scipen = 999,digits = 3)
+```
+
+
+# Intro {-}
+:::{.pink-box}
+<div dir="rtl">
+כיוון ש RStudio לא תומכת בכתיבה מימין לשמאל, כדאי לכתוב את הדברים שרוצים בעברית בקובץ וורד נפרד ואז לעתיק לתוך קובץ ה Rmd
+</div>
+:::
+
+:::{.blue-box}
+there is also a blue-box
+:::
+
+# part 1 
+
+# part 2  with tabs  {.tabset .tabset-fade .tabset-pills}
+
+## tab 1
+
+## tab 2
+
+
+# session info {-}
+```{r session info}
+sessionInfo()
+```
+
+
+
